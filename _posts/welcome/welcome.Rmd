@@ -1,26 +1,50 @@
 ---
-title: "Welcome to My Blog"
+title: "Welcome to 5523 blog"
 description: |
-  Welcome to our new blog, My Blog. We hope you enjoy 
-  reading what we have to say!
+  Welcome to 5523 assignment blog.
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+  - name: DIYAO CHEN 
+    
 date: 09-01-2020
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE,echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating blogs with Distill at:
-# https://rstudio.github.io/distill/blog.html
-
 ```
 
+```{r library, include=FALSE,echo = FALSE}
+library(dplyr)
+library(tidyverse)
+library(readr)
+library(kableExtra)
+library(visdat)
+library(tidytext)
+library(ggplot2)
+library(wordcloud)
+library(plotly)
+```
+
+```{r read data, echo = FALSE}
+covid19 <- read_csv(here::here("Data/covid19.csv"))
+head(covid19)
+```
+
+
+
+# Introduction
+
+
+```{r 1, echo = FALSE}
+summary_df <- covid19 %>% 
+  filter(location == "France") %>%
+  group_by(location)
+
+
+summary_df
+ 
+```
 
 
