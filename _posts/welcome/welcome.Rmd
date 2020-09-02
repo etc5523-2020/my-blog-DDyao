@@ -25,6 +25,7 @@ library(tidytext)
 library(ggplot2)
 library(wordcloud)
 library(plotly)
+library(coronavirus)
 ```
 
 ```{r read data, echo = FALSE}
@@ -36,14 +37,34 @@ head(covid19)
 
 # Introduction
 
+# Data description
+The dataset used for this analsis was retrieved from [coronavirus](https://github.com/RamiKrispin/coronavirus)The coronavirus package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The raw data pulled from the Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE) Coronavirus repository. which to analysis the case of covid19 in 2019
 
-```{r 1, echo = FALSE}
-summary_df <- covid19 %>% 
+```{r data description}
+
+colnames(covid19)%>%
+kable() %>%
+    kable_styling(bootstrap_options = c("striped"))
+
+```
+There are 9 vars and 174271 obs in the dataset.
+The var explain:
+date - The date of the summary
+province - The province or state, when applicable
+country - The country or region name
+lat - Latitude point
+long - Longitude point
+type - the type of case 
+cases - the number of daily cases 
+
+
+
+
+```{r data analysis, echo = FALSE}
+France <- covid19 %>% 
   filter(location == "France") %>%
-  group_by(location)
-
-
-summary_df
+  
+print(France)
  
 ```
 

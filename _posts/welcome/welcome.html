@@ -49,7 +49,7 @@
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/kePrint-0.0.1/kePrint.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -937,6 +937,7 @@
   </script>
   
   <!--/radix_placeholder_distill-->
+  <script src="welcome_files/kePrint-0.0.1/kePrint.js"></script>
   <script src="welcome_files/jquery-1.11.3/jquery.min.js"></script>
   <script src="welcome_files/bowser-1.9.3/bowser.min.js"></script>
   <script src="welcome_files/webcomponents-2.0.0/webcomponents.js"></script>
@@ -988,10 +989,70 @@
 #   long &lt;dbl&gt;</code></pre>
 </div>
 <h1 id="introduction">Introduction</h1>
+<h1 id="data-description">Data description</h1>
+<p>The dataset used for this analsis was retrieved from <a href="https://github.com/RamiKrispin/coronavirus">coronavirus</a>The coronavirus package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic. The raw data pulled from the Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE) Coronavirus repository. which to analysis the case of covid19 in 2019</p>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+x
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+date
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+location
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+location_type
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+location_code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+location_code_type
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+data_type
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+value
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+lat
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+long
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>There are 9 vars and 174271 obs in the dataset. The var explain: date - The date of the summary province - The province or state, when applicable country - The country or region name lat - Latitude point long - Longitude point type - the type of case cases - the number of daily cases</p>
 <div class="layout-chunk" data-layout="l-body">
 <pre><code>
 # A tibble: 666 x 9
-# Groups:   location [1]
    date       location location_type location_code location_code_t~
    &lt;date&gt;     &lt;chr&gt;    &lt;chr&gt;         &lt;chr&gt;         &lt;chr&gt;           
  1 2020-05-01 France   country       FR            iso_3166_2      
