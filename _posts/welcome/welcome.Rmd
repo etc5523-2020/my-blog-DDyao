@@ -55,8 +55,8 @@ cases - the number of daily cases
 
 
 # Data analysis
-```{r data analysis, echo = FALSE}
-coronavirus%>%
+```{r data analysis, echo = FALSE,warning=FALSE,message=FALSE}
+dat <- coronavirus%>%
   filter(country == "France")%>%
   mutate(month=month(date))%>%
   group_by(month,type)%>%
@@ -65,7 +65,12 @@ coronavirus%>%
               values_from = total)%>%
   mutate(death_rate = round(death/confirmed*100))%>%
   mutate(recovered_rate=round(recovered/confirmed*100))
+  
 
 ```
 
 
+```{r}
+DT::datatable(dat, options = list(pageLength = 7))
+
+```

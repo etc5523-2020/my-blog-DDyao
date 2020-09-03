@@ -49,7 +49,7 @@
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/distill-2.2.21/template.v2.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/kePrint-0.0.1/kePrint.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/crosstalk-1.1.0.1/css/crosstalk.css","welcome_files/crosstalk-1.1.0.1/js/crosstalk.js","welcome_files/crosstalk-1.1.0.1/js/crosstalk.js.map","welcome_files/crosstalk-1.1.0.1/js/crosstalk.min.js","welcome_files/crosstalk-1.1.0.1/js/crosstalk.min.js.map","welcome_files/datatables-binding-0.15/datatables.js","welcome_files/datatables-css-0.0.0/datatables-crosstalk.css","welcome_files/distill-2.2.21/template.v2.js","welcome_files/dt-core-1.10.20/css/jquery.dataTables.extra.css","welcome_files/dt-core-1.10.20/css/jquery.dataTables.min.css","welcome_files/dt-core-1.10.20/js/jquery.dataTables.min.js","welcome_files/htmlwidgets-1.5.1/htmlwidgets.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/jquery-1.12.4/jquery.min.js","welcome_files/jquery-1.12.4/LICENSE.txt","welcome_files/kePrint-0.0.1/kePrint.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -938,7 +938,15 @@
   
   <!--/radix_placeholder_distill-->
   <script src="welcome_files/kePrint-0.0.1/kePrint.js"></script>
-  <script src="welcome_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="welcome_files/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+  <script src="welcome_files/jquery-1.12.4/jquery.min.js"></script>
+  <link href="welcome_files/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+  <script src="welcome_files/datatables-binding-0.15/datatables.js"></script>
+  <link href="welcome_files/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+  <link href="welcome_files/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+  <script src="welcome_files/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+  <link href="welcome_files/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+  <script src="welcome_files/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
   <script src="welcome_files/bowser-1.9.3/bowser.min.js"></script>
   <script src="welcome_files/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="welcome_files/distill-2.2.21/template.v2.js"></script>
@@ -1030,18 +1038,11 @@ cases
 <p>There are 7 vars and 174271 obs in the dataset. The var explain: date - The date of the summary province - The province or state, when applicable country - The country or region name lat - Latitude point long - Longitude point type - the type of case cases - the number of daily cases</p>
 <h1 id="data-analysis">Data analysis</h1>
 <div class="layout-chunk" data-layout="l-body">
-<pre><code>
-# A tibble: 7 x 4
-# Groups:   month [7]
-  month confirmed death recovered
-  &lt;dbl&gt;     &lt;int&gt; &lt;int&gt;     &lt;int&gt;
-1     1         5     0         0
-2     2        95     2        12
-3     3     52727  3530      9501
-4     4    114472 20847     39963
-5     5     21710  4426     18997
-6     6     13054  1041      7926
-7     7     23134   422      5365</code></pre>
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-5b80c2bb3fea02273644" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-5b80c2bb3fea02273644">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7"],[1,2,3,4,5,6,7],[5,95,52727,114472,21710,13054,23134],[0,2,3530,20847,4426,1041,422],[0,12,9501,39963,18997,7926,5365],[0,2,7,18,20,8,2],[0,13,18,35,88,61,23]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>month<\/th>\n      <th>confirmed<\/th>\n      <th>death<\/th>\n      <th>recovered<\/th>\n      <th>death_rate<\/th>\n      <th>recovered_rate<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":7,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[7,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
