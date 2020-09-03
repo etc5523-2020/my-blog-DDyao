@@ -1,8 +1,8 @@
 [
   {
     "path": "posts/welcome/",
-    "title": "Welcome to 5523 blog",
-    "description": "Welcome to 5523 assignment blog.",
+    "title": "COVID19 France",
+    "description": "Welcome to 5523 assignment blog.This blog will analysis the case of COVID19 in France",
     "author": [
       {
         "name": "DIYAO CHEN",
@@ -11,8 +11,8 @@
     ],
     "date": "2020-09-01",
     "categories": [],
-    "preview": {},
-    "last_modified": "2020-09-03T16:58:05+08:00",
+    "preview": "posts/welcome/c19.jpg",
+    "last_modified": "2020-09-03T18:17:30+08:00",
     "input_file": "welcome.utf8.md"
   }
 ]

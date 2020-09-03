@@ -1,7 +1,7 @@
 ---
-title: "Welcome to 5523 blog"
+title: "COVID19 France"
 description: |
-  Welcome to 5523 assignment blog.
+  Welcome to 5523 assignment blog.This blog will analysis the case of COVID19 in France
 author:
   - name: DIYAO CHEN 
     
@@ -16,21 +16,19 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ```{r library, include=FALSE,echo = FALSE}
-library(tidyverse)
 library(dplyr)
+library(tidyverse)
 library(readr)
+library(kableExtra)
 library(ggplot2)
+library(plotly)
+library(coronavirus)
 library(lubridate)
-library(tibble)
-library(timevis)
-library(rmarkdown)
-library(knitr)
 ```
 
-```{r figure11,fig.cap="Timeline of 'The Joy of Painting' from Season 1-7.",out.width = '100%'}
-knitr::include_graphics("Images/c19.jpg")
 
-```
+`r knitr::include_graphics("c19.jpg")`
+
 
 # Introduction
 Coronavirus disease 2019 (COVID‑19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).It was first identified in December 2019 in Wuhan, Hubei, China, and has resulted in an ongoing pandemic. As of 31 August 2020, more than 25.3 million cases have been reported across 188 countries and territories, resulting in more than 848,000 deaths. More than 16.6 million people have recovered(wikipedia)
@@ -93,9 +91,9 @@ coronavirus%>%
 ```
 
 
-For the summary table\@ref(tab:summary), We analyze the trend of the epidemic in France by month. At January and February, there has been no significant increase in cases. At the march, there is a significant increase, which is 95 cases to 52727 cases. It peaked in April, which is 114472 case. In May to July, the number of cases is dropping, but there was a slight rebound in July. Between January and July, the most special in May. The death rate ad recovered rate is among the highest. After May, the death and recovered rate decrease both, because of the confirmed case decrease.The epidemic is basically under control in France.
+For the summary table \@ref(fig:summary), We analyze the trend of the epidemic in France by month. At January and February, there has been no significant increase in cases. At the march, there is a significant increase, which is 95 cases to 52727 cases. It peaked in April, which is 114472 case. In May to July, the number of cases is dropping, but there was a slight rebound in July. Between January and July, the most special in May. The death rate ad recovered rate is among the highest. After May, the death and recovered rate decrease both, because of the confirmed case decrease.The epidemic is basically under control in France.
 
-```{r data analysis, echo = FALSE,warning=FALSE,message=FALSE}
+```{r data analysis}
 dat2 <- coronavirus%>%
   filter(country == "France")%>%
   mutate(month=month(date))%>%
