@@ -55,12 +55,17 @@ cases - the number of daily cases
 
 
 # Data analysis
-
 ```{r data analysis, echo = FALSE}
 coronavirus%>%
   filter(country == "France")%>%
   mutate(month=month(date))%>%
-  summarize()
+  group_by(month,type)%>%
+  summarise(total = sum(cases))%>%
+   pivot_wider(names_from = type,
+              values_from = total)%>%
+  mutate(death_rate = round(death/confirmed*100))%>%
+  mutate(recovered_rate=round(recovered/confirmed*100))
 
- 
 ```
+
+
