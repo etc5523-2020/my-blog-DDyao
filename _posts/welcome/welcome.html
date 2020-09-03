@@ -49,7 +49,7 @@
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/crosstalk-1.1.0.1/css/crosstalk.css","welcome_files/crosstalk-1.1.0.1/js/crosstalk.js","welcome_files/crosstalk-1.1.0.1/js/crosstalk.js.map","welcome_files/crosstalk-1.1.0.1/js/crosstalk.min.js","welcome_files/crosstalk-1.1.0.1/js/crosstalk.min.js.map","welcome_files/datatables-binding-0.15/datatables.js","welcome_files/datatables-css-0.0.0/datatables-crosstalk.css","welcome_files/distill-2.2.21/template.v2.js","welcome_files/dt-core-1.10.20/css/jquery.dataTables.extra.css","welcome_files/dt-core-1.10.20/css/jquery.dataTables.min.css","welcome_files/dt-core-1.10.20/js/jquery.dataTables.min.js","welcome_files/htmlwidgets-1.5.1/htmlwidgets.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/jquery-1.12.4/jquery.min.js","welcome_files/jquery-1.12.4/LICENSE.txt","welcome_files/kePrint-0.0.1/kePrint.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["welcome_files/bowser-1.9.3/bowser.min.js","welcome_files/crosstalk-1.1.0.1/css/crosstalk.css","welcome_files/crosstalk-1.1.0.1/js/crosstalk.js","welcome_files/crosstalk-1.1.0.1/js/crosstalk.js.map","welcome_files/crosstalk-1.1.0.1/js/crosstalk.min.js","welcome_files/crosstalk-1.1.0.1/js/crosstalk.min.js.map","welcome_files/datatables-binding-0.15/datatables.js","welcome_files/datatables-css-0.0.0/datatables-crosstalk.css","welcome_files/distill-2.2.21/template.v2.js","welcome_files/dt-core-1.10.20/css/jquery.dataTables.extra.css","welcome_files/dt-core-1.10.20/css/jquery.dataTables.min.css","welcome_files/dt-core-1.10.20/js/jquery.dataTables.min.js","welcome_files/figure-html5/province-1.png","welcome_files/htmlwidgets-1.5.1/htmlwidgets.js","welcome_files/jquery-1.11.3/jquery.min.js","welcome_files/jquery-1.12.4/jquery.min.js","welcome_files/jquery-1.12.4/LICENSE.txt","welcome_files/kePrint-0.0.1/kePrint.js","welcome_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1037,12 +1037,147 @@ cases
 </div>
 <p>There are 7 vars and 174271 obs in the dataset. The var explain: date - The date of the summary province - The province or state, when applicable country - The country or region name lat - Latitude point long - Longitude point type - the type of case cases - the number of daily cases</p>
 <h1 id="data-analysis">Data analysis</h1>
+<p>As we can see from the table <a href="#tab:total">1</a>, there are 337229 total amount between Jan 22 to July 31.</p>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:total">Table 1: </span>Total amount of covid19 between Jan 22 to July 31
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+country
+</th>
+<th style="text-align:right;">
+total
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+France
+</td>
+<td style="text-align:right;">
+337229
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Base on the table<a href="#tab:province">2</a>, in the ten provinces of France.The situation is most serious is French local , which has 314899 case. The second is French Guiana, which has 14228 cases.And the least is Saint pierre and Miquelon, which only has 5 cases.</p>
+<div class="layout-chunk" data-layout="l-body">
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:province">Table 2: </span>Make statistics about covid19 in each provinces
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+province
+</th>
+<th style="text-align:right;">
+total
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+314899
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+French Guiana
+</td>
+<td style="text-align:right;">
+14228
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Mayotte
+</td>
+<td style="text-align:right;">
+5722
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Reunion
+</td>
+<td style="text-align:right;">
+1256
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Guadeloupe
+</td>
+<td style="text-align:right;">
+458
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Martinique
+</td>
+<td style="text-align:right;">
+382
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+French Polynesia
+</td>
+<td style="text-align:right;">
+124
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+St Martin
+</td>
+<td style="text-align:right;">
+97
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+New Caledonia
+</td>
+<td style="text-align:right;">
+44
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Saint Barthelemy
+</td>
+<td style="text-align:right;">
+14
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Saint Pierre and Miquelon
+</td>
+<td style="text-align:right;">
+5
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="layout-chunk" data-layout="l-body">
 
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<div id="htmlwidget-5b80c2bb3fea02273644" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5b80c2bb3fea02273644">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7"],[1,2,3,4,5,6,7],[5,95,52727,114472,21710,13054,23134],[0,2,3530,20847,4426,1041,422],[0,12,9501,39963,18997,7926,5365],[0,2,7,18,20,8,2],[0,13,18,35,88,61,23]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>month<\/th>\n      <th>confirmed<\/th>\n      <th>death<\/th>\n      <th>recovered<\/th>\n      <th>death_rate<\/th>\n      <th>recovered_rate<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":7,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[7,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7787fd9b7f62b58fc421" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7787fd9b7f62b58fc421">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7"],[1,2,3,4,5,6,7],[5,95,52727,114472,21710,13054,23134],[0,2,3530,20847,4426,1041,422],[0,12,9501,39963,18997,7926,5365],[0,2,7,18,20,8,2],[0,13,18,35,88,61,23]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>month<\/th>\n      <th>confirmed<\/th>\n      <th>death<\/th>\n      <th>recovered<\/th>\n      <th>death_rate<\/th>\n      <th>recovered_rate<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":7,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[7,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

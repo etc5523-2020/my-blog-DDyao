@@ -55,8 +55,44 @@ cases - the number of daily cases
 
 
 # Data analysis
+As we can see from the table \@ref(tab:total), there are 337229 total amount between Jan 22 to July 31.
+
+
+
+```{r total,fig.cap= "Total amount of covid19 between Jan 22 to July 31"}
+coronavirus%>%
+  filter(country == "France")%>%
+  mutate(month=month(date))%>%
+  group_by(country)%>%
+  summarise(total = sum(cases))%>%
+  knitr::kable(
+  caption = "Total amount of covid19 between Jan 22 to July 31") %>% 
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+
+
+Base on the table\@ref(tab:province), in the ten provinces of France.The situation is most serious is French local , which has 314899 case. The second is French Guiana, which has 14228 cases.And the least is Saint pierre and Miquelon, which only has 5 cases.
+
+
+
+```{r province,fig.width= 100}
+coronavirus%>%
+  filter(country == "France")%>%
+  group_by(province)%>%
+  summarise(total = sum(cases))%>%
+  arrange(-total)%>%
+  knitr::kable(
+  caption = "Make statistics about covid19 in each provinces") %>% 
+  kable_styling(latex_options = c("striped", "hover"))
+
+```
+
+
+
+
 ```{r data analysis, echo = FALSE,warning=FALSE,message=FALSE}
-dat <- coronavirus%>%
+dat2 <- coronavirus%>%
   filter(country == "France")%>%
   mutate(month=month(date))%>%
   group_by(month,type)%>%
@@ -71,6 +107,6 @@ dat <- coronavirus%>%
 
 
 ```{r}
-DT::datatable(dat, options = list(pageLength = 7))
+DT::datatable(dat2, options = list(pageLength = 7))
 
 ```
