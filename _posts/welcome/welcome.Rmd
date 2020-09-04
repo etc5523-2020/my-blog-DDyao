@@ -91,7 +91,7 @@ coronavirus%>%
 ```
 
 
-For the summary table \@ref(fig:summary), We analyze the trend of the epidemic in France by month. At January and February, there has been no significant increase in cases. At the march, there is a significant increase, which is 95 cases to 52727 cases. It peaked in April, which is 114472 case. In May to July, the number of cases is dropping, but there was a slight rebound in July. Between January and July, the most special in May. The death rate ad recovered rate is among the highest. After May, the death and recovered rate decrease both, because of the confirmed case decrease.The epidemic is basically under control in France.
+For the summary table  **Figure \@ref(fig:summary-table)**, We analyze the trend of the epidemic in France by month. At January and February, there has been no significant increase in cases. At the march, there is a significant increase, which is 95 cases to 52727 cases. It peaked in April, which is 114472 case. In May to July, the number of cases is dropping, but there was a slight rebound in July. Between January and July, the most special in May. The death rate ad recovered rate is among the highest. After May, the death and recovered rate decrease both, because of the confirmed case decrease.The epidemic is basically under control in France.
 
 ```{r data analysis}
 dat2 <- coronavirus%>%
@@ -108,7 +108,7 @@ dat2 <- coronavirus%>%
 ```
 
 
-```{r summary}
+```{r summary-table,fig.cap="COVID-19 case in different months in France",fig.align = "center"}
 DT::datatable(dat2, options = list(pageLength = 7))
 
 ```
