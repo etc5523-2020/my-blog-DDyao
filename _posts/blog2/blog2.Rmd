@@ -36,9 +36,60 @@ Coronavirus disease 2019 (COVID‑19) is an infectious disease caused by severe 
 In this blog, we will focus on the covid19 in Italy.
 
 # Data description
-The dataset used for this analsis was retrieved from [covid19italy](https://github.com/RamiKrispin/covid19italy)
+The dataset used for this analsis was retrieved from [covid19italy](https://github.com/RamiKrispin/covid19italy)The covid19italy R package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) pandemic outbreak in Italy. The package includes the following three datasets:
 
-```{r data description}
+italy_total - daily summary of the outbreak on the national level
+
+italy_region - daily summary of the outbreak on the region level
+
+italy_province - daily summary of the outbreak on the province level
+
+I download the dataset for csv file read in the blog.and collect the data between 24/02/2020 to 10/09/2020,which is the latest situation from Italy.
+
+```{r read data}
+region<-read.csv(here::here("Data/italy_region.csv"))
+province<-read.csv(here::here("Data/italy_province.csv"))
+total<-read.csv(here::here("Data/italy_total.csv"))
+
+```
 
 
+```{r total analysis}
+dat <- total%>%
+  mutate(month=month(date))%>%
+  group_by(month)%>%
+  filter(cumulative_cases==max(cumulative_cases))%>%
+  filter(recovered == max(recovered))%>%
+  filter(death == max(death))%>%
+  select(month,cumulative_positive_cases,recovered,death)%>%
+  rename( MonthlyTotal=cumulative_positive_cases)
+```
+
+
+```{r totalanalysistable, fig.cap="Monthly analysis by covid19 in Italy",fig.align = "center"}
+knitr::kable(dat,
+             caption = "Make statistics about covid19 in each provinces"
+             ) %>% 
+  kable_styling(latex_options = c("striped", "hold_position"))
+```
+
+```{r totalanalysisplot}
+plot_ly(data = dat,
+        x = ~ month,
+        y = ~MonthlyTotal, 
+        name = 'MonthlyTotal', 
+        fillcolor = 'yellow',
+        type = 'scatter',
+        mode = 'none', 
+        stackgroup = 'one') %>%
+  add_trace( y = ~ recovered, 
+             name = "recover",
+             fillcolor = 'green') %>%
+  add_trace(y = ~death, 
+                name = 'death', 
+                fillcolor = 'red')%>%
+   layout(title = "Italy - covid19 analysis every month",
+         legend = list(x = 5, y = 0.5),
+         yaxis = list(title = "Number of Cases"),
+         xaxis = list(title = "Month"))
 ```
