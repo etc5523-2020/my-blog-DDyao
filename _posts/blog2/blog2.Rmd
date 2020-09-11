@@ -93,3 +93,21 @@ plot_ly(data = dat,
          yaxis = list(title = "Number of Cases"),
          xaxis = list(title = "Month"))
 ```
+
+
+```{r province}
+dat2 <- province%>%
+  group_by(region_name)%>%
+  summarise(total = sum(new_cases))%>%
+  arrange(-total)
+dat2
+```
+
+```{r provinceplot}
+plot_ly(dat2, labels = ~region_name, values = ~total,
+    textposition = "inside",
+    textinfo = "label+percent", showlegend = FALSE) %>%
+  add_pie() %>%
+  layout(title = "percentage of every region of covid19")
+```
+
