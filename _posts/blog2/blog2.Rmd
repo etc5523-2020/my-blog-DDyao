@@ -1,0 +1,46 @@
+---
+title: "COVID19 Italy"
+description: |
+  Welcome to 5523 assignment blog.This blog will analysis the case of COVID19 in Italy
+author:
+  - name: DIYAO CHEN 
+    
+date: 09-11-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE,echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r library, include=FALSE,echo = FALSE}
+library(dplyr)
+library(tidyverse)
+library(readr)
+library(kableExtra)
+library(ggplot2)
+library(plotly)
+library(covid19italy)
+library(lubridate)
+```
+
+
+`r knitr::include_graphics("c19.jpg")`
+
+
+# Introduction
+Coronavirus disease 2019 (COVID‑19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).It was first identified in December 2019 in Wuhan, Hubei, China, and has resulted in an ongoing pandemic. As of 31 August 2020, more than 25.3 million cases have been reported across 188 countries and territories, resulting in more than 848,000 deaths. More than 16.6 million people have recovered[wikipedia](https://en.wikipedia.org/wiki/Coronavirus_disease_2019)
+
+In this blog, we will focus on the covid19 in Italy.
+
+# Data description
+The dataset used for this analsis was retrieved from [covid19italy](https://github.com/RamiKrispin/covid19italy)
+
+```{r data description}
+update_data()
+
+
+
+```
