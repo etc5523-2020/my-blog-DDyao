@@ -39,8 +39,6 @@ In this blog, we will focus on the covid19 in Italy.
 The dataset used for this analsis was retrieved from [covid19italy](https://github.com/RamiKrispin/covid19italy)
 
 ```{r data description}
-update_data()
-
 
 
 ```
