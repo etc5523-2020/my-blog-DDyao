@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/blog2/",
+    "title": "COVID19 Italy",
+    "description": "Welcome to 5523 assignment blog.This blog will analysis the case of COVID19 in Italy",
+    "author": [
+      {
+        "name": "DIYAO CHEN",
+        "url": {}
+      }
+    ],
+    "date": "2020-09-11",
+    "categories": [],
+    "preview": "posts/blog2/c19.jpg",
+    "last_modified": "2020-09-11T16:31:02+08:00",
+    "input_file": "blog2.utf8.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "COVID19 France",
     "description": "Welcome to 5523 assignment blog.This blog will analysis the case of COVID19 in France",
