@@ -1,0 +1,20 @@
+@article{BBCNews2020Apr,
+	author = {{BBC News}},
+	title = {{Coronavirus: Italy's PM outlines lockdown easing measures}},
+	journal = {BBC News},
+	year = {2020},
+	month = {Apr},
+	publisher = {BBC News},
+	url = {https://www.bbc.com/news/world-europe-52435273}
+}
+
+
+
+@misc{ContributorstoWikimediaprojects2020Sep,
+	author = {{Contributors to Wikimedia projects}},
+	title = {{Coronavirus disease 2019 - Wikipedia}},
+	year = {2020},
+	month = {Sep},
+	note = {[Online; accessed 13. Sep. 2020]},
+	url = {https://en.wikipedia.org/w/index.php?title=Coronavirus_disease_2019&oldid=978125859}
+}
