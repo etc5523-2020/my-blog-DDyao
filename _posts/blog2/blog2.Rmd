@@ -46,6 +46,15 @@ italy_province - daily summary of the outbreak on the province level
 
 I download the dataset for csv file read in the blog.and collect the data between 24/02/2020 to 10/09/2020,which is the latest situation from Italy.
 
+# The main research
+- primary question:
+What is the situation about COVID19 in Italy?
+- Secondary question:
+Which region has the most patients?
+
+
+
+
 ```{r read data}
 region<-read.csv(here::here("Data/italy_region.csv"))
 province<-read.csv(here::here("Data/italy_province.csv"))
@@ -65,15 +74,23 @@ dat <- total%>%
   rename( MonthlyTotal=cumulative_positive_cases)
 ```
 
+# What is the situation about COVID19 in Italy?
+
+As we can see from the **Table \@ref(tab:totalanalysistable)**. Because lack of data before Feb 14,so we can see that the covid19 case in February is few. but the situation has grown rapidly in March.And  
+then it continued to grow in April,and pick at April,which is 101551 total patients.In the next month, the infection decrease Significantly. Because Italy has effective prevention and control measures.The downward trend has been maintained in June and July. but it started to rebound in August.  
+
+
 
 ```{r totalanalysistable, fig.cap="Monthly analysis by covid19 in Italy",fig.align = "center"}
 knitr::kable(dat,
-             caption = "Make statistics about covid19 in each provinces"
+             caption = "Make statistics about covid19 in each month"
              ) %>% 
   kable_styling(latex_options = c("striped", "hold_position"))
 ```
 
-```{r totalanalysisplot}
+And we can research the recovered and death with **Figure\@ref(fig:plot-Month)**. We can see that,in the vast majority of patients, many can recover. The patient of recover has high rate in the total patient. On the other hand,the death toll is growing slowly.This is evidence of the high level of medical care in Italy.
+
+```{r plot-Month,fig.cap="Monthly analysis by covid19 in Italy",fig.align = "center"}
 plot_ly(data = dat,
         x = ~ month,
         y = ~MonthlyTotal, 
