@@ -1,2 +1,3 @@
-# my-blog-DDyao
-my-blog-DDyao created by GitHub Classroom
+# my-blog-DIYAO CHEN
+
+Weclome to my blog.
