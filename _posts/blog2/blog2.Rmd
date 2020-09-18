@@ -27,7 +27,7 @@ library(lubridate)
 ```
 
 
-`r knitr::include_graphics("c19.jpg")`
+`r knitr::include_graphics("c19.png")`
 
 
 # Introduction
