@@ -21,4 +21,50 @@ output:
 
 
 
-## Introducing shiny app and what it does?
+## 1.Introducing shiny app and what it does?
+In the shiny assignment, i creat a shiny app to research the situation of COVID19 in Italy. My research question is What is the situation about COVID19 in Italy(each month)? and what is the situation for each province?
+
+### Data select
+The dataset used for this analsis was retrieved from [covid19italy](https://github.com/RamiKrispin/covid19italy)The covid19italy R package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) pandemic outbreak in Italy. The package includes the following three datasets:
+
+italy_total - daily summary of the outbreak on the national level
+
+italy_region - daily summary of the outbreak on the region level
+
+italy_province - daily summary of the outbreak on the province level
+
+I download the dataset for csv file read in the blog.and collect the data between 24/02/2020 to 10/09/2020,which is the latest situation from Italy.
+
+### App Usage Introduction
+In the app has two main page, one is Covid19 analysis page,the other is the About page. In the covid19 analysis page has a table to introduced the basic situation of COVID19 in Italy,and the figgure is analysis the different province's situation.
+
+`r knitr::include_graphics("image/tabpanel.png")`
+
+### Figure Usage Introduction
+
+`r knitr::include_graphics("image/figure.png")`
+
+- on the left of the bottom, you can select the which month do you want to know the numbers of COVID19 case for each province.
+
+`r knitr::include_graphics("bottom.png")`
+
+- In the poltly, you can click each bar to know the detail of each province for that.
+
+`r knitr::include_graphics("image/clickbar.png")`
+
+
+### Table Usage Introduction
+- About the table, you can click the top of the table(column name)to filter and arrange the case of COVID19 in Italy for each month.
+the column name including month, MonthlyTotal, recovered, death, recovered rate and death rate. You can do your research in any combination you want.
+
+`r knitr::include_graphics("image/top.png")`
+
+- click the top of table
+
+`r knitr::include_graphics("image/table.png")`
+
+
+### About page
+In the about page, you can see the introduction of the analysis of the COVID19 in Italy. and you can know the data source come from, also you can see some analysis of the case and get the conclusion.
+
+`r knitr::include_graphics("image/about.png")`

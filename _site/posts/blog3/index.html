@@ -50,7 +50,7 @@
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["blog3_files/bowser-1.9.3/bowser.min.js","blog3_files/crosstalk-1.1.0.1/css/crosstalk.css","blog3_files/crosstalk-1.1.0.1/js/crosstalk.js","blog3_files/crosstalk-1.1.0.1/js/crosstalk.js.map","blog3_files/crosstalk-1.1.0.1/js/crosstalk.min.js","blog3_files/crosstalk-1.1.0.1/js/crosstalk.min.js.map","blog3_files/distill-2.2.21/template.v2.js","blog3_files/htmlwidgets-1.5.1/htmlwidgets.js","blog3_files/jquery-1.11.3/jquery.min.js","blog3_files/kePrint-0.0.1/kePrint.js","blog3_files/lightable-0.0.1/lightable.css","blog3_files/plotly-binding-4.9.2.1/plotly.js","blog3_files/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css","blog3_files/plotly-main-1.52.2/plotly-latest.min.js","blog3_files/typedarray-0.1/typedarray.min.js","blog3_files/webcomponents-2.0.0/webcomponents.js","c19.png","reference.bib.txt","references.bib"]}
+  {"type":"character","attributes":{},"value":["blog3_files/bowser-1.9.3/bowser.min.js","blog3_files/crosstalk-1.1.0.1/css/crosstalk.css","blog3_files/crosstalk-1.1.0.1/js/crosstalk.js","blog3_files/crosstalk-1.1.0.1/js/crosstalk.js.map","blog3_files/crosstalk-1.1.0.1/js/crosstalk.min.js","blog3_files/crosstalk-1.1.0.1/js/crosstalk.min.js.map","blog3_files/distill-2.2.21/template.v2.js","blog3_files/htmlwidgets-1.5.1/htmlwidgets.js","blog3_files/jquery-1.11.3/jquery.min.js","blog3_files/kePrint-0.0.1/kePrint.js","blog3_files/lightable-0.0.1/lightable.css","blog3_files/plotly-binding-4.9.2.1/plotly.js","blog3_files/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css","blog3_files/plotly-main-1.52.2/plotly-latest.min.js","blog3_files/typedarray-0.1/typedarray.min.js","blog3_files/webcomponents-2.0.0/webcomponents.js","bottom.png","image/about.png","image/c19.png","image/clickbar.png","image/figure.png","image/table.png","image/tabpanel.png","image/top.png","reference.bib.txt","references.bib"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 
@@ -1332,7 +1332,39 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>What are some things that you’d like to add that’s plausible?</li>
 <li>What are some things that you’d like to add that cannot be done yet due to limitation in data or technology?</li>
 </ul>
-<h2 id="introducing-shiny-app-and-what-it-does-1">Introducing shiny app and what it does?</h2>
+<h2 id="introducing-shiny-app-and-what-it-does-1">1.Introducing shiny app and what it does?</h2>
+<p>In the shiny assignment, i creat a shiny app to research the situation of COVID19 in Italy. My research question is What is the situation about COVID19 in Italy(each month)? and what is the situation for each province?</p>
+<h3 id="data-select">Data select</h3>
+<p>The dataset used for this analsis was retrieved from <a href="https://github.com/RamiKrispin/covid19italy">covid19italy</a>The covid19italy R package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) pandemic outbreak in Italy. The package includes the following three datasets:</p>
+<p>italy_total - daily summary of the outbreak on the national level</p>
+<p>italy_region - daily summary of the outbreak on the region level</p>
+<p>italy_province - daily summary of the outbreak on the province level</p>
+<p>I download the dataset for csv file read in the blog.and collect the data between 24/02/2020 to 10/09/2020,which is the latest situation from Italy.</p>
+<h3 id="app-usage-introduction">App Usage Introduction</h3>
+<p>In the app has two main page, one is Covid19 analysis page,the other is the About page. In the covid19 analysis page has a table to introduced the basic situation of COVID19 in Italy,and the figgure is analysis the different province’s situation.</p>
+<p><img src="image/tabpanel.png" width="418" /></p>
+<h3 id="figure-usage-introduction">Figure Usage Introduction</h3>
+<p><img src="image/figure.png" width="1246" /></p>
+<ul>
+<li>on the left of the bottom, you can select the which month do you want to know the numbers of COVID19 case for each province.</li>
+</ul>
+<p><img src="bottom.png" width="591" /></p>
+<ul>
+<li>In the poltly, you can click each bar to know the detail of each province for that.</li>
+</ul>
+<p><img src="image/clickbar.png" width="1842" /></p>
+<h3 id="table-usage-introduction">Table Usage Introduction</h3>
+<ul>
+<li>About the table, you can click the top of the table(column name)to filter and arrange the case of COVID19 in Italy for each month. the column name including month, MonthlyTotal, recovered, death, recovered rate and death rate. You can do your research in any combination you want.</li>
+</ul>
+<p><img src="image/top.png" width="1253" /></p>
+<ul>
+<li>click the top of table</li>
+</ul>
+<p><img src="image/table.png" width="1268" /></p>
+<h3 id="about-page">About page</h3>
+<p>In the about page, you can see the introduction of the analysis of the COVID19 in Italy. and you can know the data source come from, also you can see some analysis of the case and get the conclusion.</p>
+<p><img src="image/about.png" width="448" /></p>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>
