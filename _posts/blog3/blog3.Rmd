@@ -1,0 +1,24 @@
+---
+title: "shiny app introduction and self review"
+description: |
+  Welcome to 5523 assignment blog.This blog will talk about self reflection in my learning process.
+author:
+  - name: DIYAO CHEN 
+    
+date: 11-10-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+# The main research
+### 1.Introducing shiny app and what it does?
+### 2.Self review in learning process.
+- What did you do well?
+- What are the points you can improve on?
+- What are some things that you’d like to add that’s plausible?
+- What are some things that you’d like to add that cannot be done yet due to limitation in data or technology?
+
+
+
+## Introducing shiny app and what it does?
