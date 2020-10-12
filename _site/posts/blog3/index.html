@@ -1325,7 +1325,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="d-article">
 <h1 id="the-main-research">The main research</h1>
 <h3 id="introducing-shiny-app-and-what-it-does">1.Introducing shiny app and what it does?</h3>
-<h3 id="self-review-in-learning-process.">2.Self review in learning process.</h3>
+<h3 id="self-review">2.Self review</h3>
 <ul>
 <li>What did you do well?</li>
 <li>What are the points you can improve on?</li>
@@ -1333,7 +1333,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>What are some things that you’d like to add that cannot be done yet due to limitation in data or technology?</li>
 </ul>
 <h2 id="introducing-shiny-app-and-what-it-does-1">1.Introducing shiny app and what it does?</h2>
-<p>In the shiny assignment, i creat a shiny app to research the situation of COVID19 in Italy. My research question is What is the situation about COVID19 in Italy(each month)? and what is the situation for each province?</p>
+<p>In the shiny assignment, I create a shiny app to research the situation of COVID19 in Italy. My research question is What is the situation about COVID19 in Italy(each month)? and what is the situation for each province?</p>
 <h3 id="data-select">Data select</h3>
 <p>The dataset used for this analsis was retrieved from <a href="https://github.com/RamiKrispin/covid19italy">covid19italy</a>The covid19italy R package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) pandemic outbreak in Italy. The package includes the following three datasets:</p>
 <p>italy_total - daily summary of the outbreak on the national level</p>
@@ -1341,7 +1341,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <p>italy_province - daily summary of the outbreak on the province level</p>
 <p>I download the dataset for csv file read in the blog.and collect the data between 24/02/2020 to 10/09/2020,which is the latest situation from Italy.</p>
 <h3 id="app-usage-introduction">App Usage Introduction</h3>
-<p>In the app has two main page, one is Covid19 analysis page,the other is the About page. In the covid19 analysis page has a table to introduced the basic situation of COVID19 in Italy,and the figgure is analysis the different province’s situation.</p>
+<p>In the app has two main pages, one is Covid19 analysis page, the other is the About page. In the covid19 analysis, the page has a table to introduce the basic situation of COVID19 in Italy, and the figure is analysis the different province’s situation.</p>
 <p><img src="image/tabpanel.png" width="418" /></p>
 <h3 id="figure-usage-introduction">Figure Usage Introduction</h3>
 <p><img src="image/figure.png" width="1246" /></p>
@@ -1368,11 +1368,27 @@ document.addEventListener('DOMContentLoaded', function() {
 <h3 id="about-page">About page</h3>
 <p>In the about page, you can see the introduction of the analysis of the COVID19 in Italy. and you can know the data source come from, also you can see some analysis of the case and get the conclusion.</p>
 <p><img src="image/about.png" width="448" /></p>
-<h3 id="what-point-can-improve-about-shiny-app">What point can improve about Shiny app?</h3>
+<h3 id="what-you-should-do-before-you-visit-this-app">What you should do before you visit this app?</h3>
+<p>In this assignement, the package use including: “shiny, shinythemes, plotly, ggplot2, dplyr, lubridate,bomrang, readr and DT”. Please install all this package before you visit or use the shinyapps.</p>
+<h2 id="self-review-1">2.Self review</h2>
+<ul>
+<li>What did you do well?</li>
+<li>What are the points you can improve on?</li>
+<li>What are some things that you’d like to add that’s plausible?</li>
+<li>What are some things that you’d like to add that cannot be done yet due to limitation in data or technology?</li>
+</ul>
+<h3 id="what-did-you-do-well">What did you do well?</h3>
+<p>1.The structure is clear and the clear theme, the shiny app is aim on the COVID19 in Italy, all the research is aim on Italy.</p>
+<p>2.After the table and figure add the explain, which can let the visitor can be understand the actual situation more easlier.</p>
+<h3 id="what-are-the-points-you-can-improve-on">What are the points you can improve on?</h3>
 <ol type="1">
-<li>The background only has white and black, not enough color, can not catch visitor’s eyes. There should be more pictures in main panel.</li>
+<li>The background only has white and black, not enough colour, can not catch the visitor’s eyes. There should be more pictures in the main panel.</li>
 </ol>
-<p>2.The click plot need to improve, add</p>
+<p>2.The click plot needs to improve, add for an element in it, I just drew a simple line chart.</p>
+<ol start="3" type="1">
+<li>There are too few research directions.only research each province’s situation and total confirmed.</li>
+</ol>
+<h3 id="what-are-some-things-that-youd-like-to-add-thats-plausible">What are some things that you’d like to add that’s plausible?</h3>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

@@ -13,7 +13,7 @@ output:
 
 # The main research
 ### 1.Introducing shiny app and what it does?
-### 2.Self review in learning process.
+### 2.Self review
 - What did you do well?
 - What are the points you can improve on?
 - What are some things that you’d like to add that’s plausible?
@@ -22,7 +22,7 @@ output:
 
 
 ## 1.Introducing shiny app and what it does?
-In the shiny assignment, i creat a shiny app to research the situation of COVID19 in Italy. My research question is What is the situation about COVID19 in Italy(each month)? and what is the situation for each province?
+In the shiny assignment, I create a shiny app to research the situation of COVID19 in Italy. My research question is What is the situation about COVID19 in Italy(each month)? and what is the situation for each province?
 
 ### Data select
 The dataset used for this analsis was retrieved from [covid19italy](https://github.com/RamiKrispin/covid19italy)The covid19italy R package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) pandemic outbreak in Italy. The package includes the following three datasets:
@@ -36,7 +36,7 @@ italy_province - daily summary of the outbreak on the province level
 I download the dataset for csv file read in the blog.and collect the data between 24/02/2020 to 10/09/2020,which is the latest situation from Italy.
 
 ### App Usage Introduction
-In the app has two main page, one is Covid19 analysis page,the other is the About page. In the covid19 analysis page has a table to introduced the basic situation of COVID19 in Italy,and the figgure is analysis the different province's situation.
+In the app has two main pages, one is Covid19 analysis page, the other is the About page. In the covid19 analysis, the page has a table to introduce the basic situation of COVID19 in Italy, and the figure is analysis the different province's situation.
 
 `r knitr::include_graphics("image/tabpanel.png")`
 
@@ -76,7 +76,30 @@ In the about page, you can see the introduction of the analysis of the COVID19 i
 `r knitr::include_graphics("image/about.png")`
 
 
-### What point can improve about Shiny app?
-1. The background only has white and black, not enough color, can not catch visitor's eyes. There should be more pictures in main panel.
+### What you should do before you visit this app?
+In this assignement, the package use including:
+"shiny, shinythemes, plotly, ggplot2, dplyr, lubridate,bomrang, readr and DT".
+Please install all this package before you visit or use the shinyapps.
 
-2.The click plot need to improve, add 
+
+
+## 2.Self review
+- What did you do well?
+- What are the points you can improve on?
+- What are some things that you’d like to add that’s plausible?
+- What are some things that you’d like to add that cannot be done yet due to limitation in data or technology?
+
+
+### What did you do well?
+1.The structure is clear and the clear theme, the shiny app is aim on the COVID19 in Italy, all the research is aim on Italy.
+
+2.After the table and figure add the explain, which can let the visitor can be understand the actual situation more easlier.
+
+### What are the points you can improve on?
+1. The background only has white and black, not enough colour, can not catch the visitor's eyes. There should be more pictures in the main panel.
+
+2.The click plot needs to improve, add for an element in it,  I just drew a simple line chart.
+
+3. There are too few research directions.only research each province's situation and total confirmed.
+
+### What are some things that you’d like to add that’s plausible?
