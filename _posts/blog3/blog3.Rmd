@@ -1,5 +1,5 @@
 ---
-title: "shiny app introduction and self review"
+title: "Shiny app introduction and self review"
 description: |
   Welcome to 5523 assignment blog.This blog will talk about self reflection in my learning process.
 author:
@@ -44,9 +44,13 @@ In the app has two main page, one is Covid19 analysis page,the other is the Abou
 
 `r knitr::include_graphics("image/figure.png")`
 
+<br>
+
 - on the left of the bottom, you can select the which month do you want to know the numbers of COVID19 case for each province.
 
 `r knitr::include_graphics("bottom.png")`
+
+<br>
 
 - In the poltly, you can click each bar to know the detail of each province for that.
 
@@ -61,6 +65,8 @@ the column name including month, MonthlyTotal, recovered, death, recovered rate 
 
 - click the top of table
 
+<br>
+
 `r knitr::include_graphics("image/table.png")`
 
 
@@ -68,3 +74,9 @@ the column name including month, MonthlyTotal, recovered, death, recovered rate 
 In the about page, you can see the introduction of the analysis of the COVID19 in Italy. and you can know the data source come from, also you can see some analysis of the case and get the conclusion.
 
 `r knitr::include_graphics("image/about.png")`
+
+
+### What point can improve about Shiny app?
+1. The background only has white and black, not enough color, can not catch visitor's eyes. There should be more pictures in main panel.
+
+2.The click plot need to improve, add 

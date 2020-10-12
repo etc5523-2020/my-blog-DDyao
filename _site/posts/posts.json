@@ -1,7 +1,7 @@
 [
   {
     "path": "posts/blog3/",
-    "title": "shiny app introduction and self review",
+    "title": "Shiny app introduction and self review",
     "description": "Welcome to 5523 assignment blog.This blog will talk about self reflection in my learning process.",
     "author": [
       {
@@ -12,7 +12,7 @@
     "date": "2020-11-10",
     "categories": [],
     "preview": "posts/blog3/image/tabpanel.png",
-    "last_modified": "2020-10-11T16:33:55+08:00",
+    "last_modified": "2020-10-12T10:18:04+08:00",
     "input_file": "blog3.utf8.md"
   },
   {
