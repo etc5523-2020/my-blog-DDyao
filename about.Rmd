@@ -12,3 +12,10 @@ knitr::opts_chunk$set(echo = FALSE)
 Welcome to my blog! This blog will focus on the ETC5523 assignment. I hope you can enjoy it!
 
 My name is DIYAO CHEN, i am study at Monash university.
+
+
+## Blog1 - COVID19 in France
+
+## Blog2 - COVID19 in Italy
+
+## Blog3 - Shinyapp self review

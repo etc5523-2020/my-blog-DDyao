@@ -95,6 +95,8 @@ Please install all this package before you visit or use the shinyapps.
 
 2.After the table and figure add the explain, which can let the visitor can be understand the actual situation more easlier.
 
+3.Use DT table to make a good arrange and visualization.
+
 ### What are the points you can improve on?
 1. The background only has white and black, not enough colour, can not catch the visitor's eyes. There should be more pictures in the main panel.
 
@@ -103,3 +105,20 @@ Please install all this package before you visit or use the shinyapps.
 3. There are too few research directions.only research each province's situation and total confirmed.
 
 ### What are some things that you’d like to add that’s plausible?
+1.I want to add one more chart to explain the summary table, which can catch the improtant point(like which month is increase fast or which month is peak at top) more easlier.The table is not intuitive enough.
+
+2.Can add the map plot to analysis each province's situation of COVID19.
+
+### What are some things that you’d like to add that cannot be done yet due to limitation in data or technology?
+
+1.There are some data collection limitation, some province or monthly data is incorrect or has a missing value, which will influence the analysis accuracy.
+
+2.The dataset will update every day, So you can't give the most comprehensive and prepared analysis.
+
+3.Becauses of knowledge limitation, can not make the prediction model for the Italy COVID19 situation.
+
+
+
+# Reference
+
+Coronavirus disease 2019, [wikipedia](https://en.wikipedia.org/wiki/Coronavirus_disease_2019) @ContributorstoWikimediaprojects2020Sep
