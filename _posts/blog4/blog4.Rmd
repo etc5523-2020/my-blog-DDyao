@@ -39,4 +39,23 @@ For the data page, it has two DT table to Summarize all the data.
 
 overall, the shiny app is successful, It gives a clear picture of the state of the COVID19 in Europe. It explores the total case with death rate, the weekly testing rate, different country transmission by week and compares every country, which let visitors can get a full picture of the COVID19 situation in Europe.
 
+# Are the improvements that could be made to the code? Are there improvements that could be made to the shiny app inside the package?
+
+For the package:
+When I run the app(launch_app), I meet some problem. The package tidycovid19 is inside the app, but I can not install it. So, I use all day to overcome this problem. Maybe you can delete this package replace to the CSV file for input the raw data.
+
+
+For the shinyapp:
+1. It should add a custom colour for each country in the plots in “Cases and Death” and the “Testing” tab. because, all the country is the same colour now, maybe hard to observe the difference.
+
+2.The x-axis label sequence in the daily-wise plots is still by three months.  should have changed it into monthly. Because of I want to check February, but it is not shown on the plot.
+
+# Is the documents sufficient to get started? 
+
+
+
+# what you’ve learned from reviewing the package?
+The developers show to give more guidance to the visitor. More explain can be given the visitor more guide and how to use the package easily rather than the visitor use it for no purpose. On the other hand, the content inside the package can be better used. The clear guide is important.
+
+
 
