@@ -1,0 +1,19 @@
+---
+title: "R package review"
+description: |
+  Welcome to 5523 assignment blog.This blog will talk about R package review.
+author:
+  - name: DIYAO CHEN 
+    
+date: 10-24-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Introduction
