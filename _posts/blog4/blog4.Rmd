@@ -50,12 +50,43 @@ For the shinyapp:
 
 2.The x-axis label sequence in the daily-wise plots is still by three months.  should have changed it into monthly. Because of I want to check February, but it is not shown on the plot.
 
-# Is the documents sufficient to get started? 
-
-
 
 # what you’ve learned from reviewing the package?
 The developers show to give more guidance to the visitor. More explain can be given the visitor more guide and how to use the package easily rather than the visitor use it for no purpose. On the other hand, the content inside the package can be better used. The clear guide is important.
 
 
+# Appendix
 
+### Documentation
+
+The package includes all the following forms of documentation:
+
+- [✔] **Installation instructions:** for the package is found in README  
+- [✔] **Vignette(s)** demonstrating major functionality that runs successfully locally  
+- [✔] **Function Documentation:** for all exported functions in R help  
+- [✔] **Examples** for all exported functions in R Help that run successfully locally  
+
+
+#### Comments
+
+- **Installation instructions :** The `readme` provides detailed installation instructions, which can let the users install it successfully. 
+<br>
+
+- **Vignette(s) :** The Vignette page provides comprehensive information for the major functions and the usage of the built-in Shiny app.  
+
+<br>
+- **Function Documentation :** All exported functions in R help with nice documentation.  
+
+<br>
+- **Examples : ** All exported examples in R help can run successfully.  
+
+
+### Functionality
+
+- [✔] **Installation:** Installation succeeds as documented.  
+<br>
+
+- [✔] **Functionality:** Any functional claims of the software been confirmed.  
+<br>
+
+- [✔] **Automated tests:** Unit tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
